@@ -4,7 +4,7 @@ return {
     local mode = {
       'mode',
       fmt = function(str)
-        return ' ' .. str
+        return str
         -- return ' ' .. str:sub(1, 1) -- displays only the first character of the mode
       end,
     }
@@ -44,8 +44,8 @@ return {
         -- Some useful glyphs:
         -- https://www.nerdfonts.com/cheat-sheet
         --        
-        section_separators = { left = '', right = '' },
-        component_separators = { left = '', right = '' },
+        component_separators = '',
+        section_separators = '',
         disabled_filetypes = { 'alpha', 'neo-tree' },
         always_divide_middle = true,
       },
